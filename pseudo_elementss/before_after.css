@@ -1,0 +1,20 @@
+#p1::before{
+    content: 'before';
+    color: blue;
+}
+#p2::after{
+    content: 'okok';
+    color: brown;
+}
+#p3::after{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size:contain ;
+    background-image: url(https://media.istockphoto.com/id/541152916/photo/healthy-green-trees-in-forest-of-spruce-fir-and-pine.jpg?s=1024x1024&w=is&k=20&c=pH4aH8u4mW0czUAe8Iv7lGhMf8-h03eiYh4USoCY1kM=);
+
+}
+#p3{
+    background-image: url(img\resume1.jpg);
+}

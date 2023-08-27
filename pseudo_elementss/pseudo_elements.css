@@ -1,0 +1,12 @@
+.p::first-letter{
+    font-size: x-large;
+    font-weight: 5;
+    text-transform: capitalize;
+    color: blue;
+}
+.pp::first-line{
+    font-size: x-large;
+    font-weight: 5;
+    text-transform: capitalize;
+    color: blue;
+}

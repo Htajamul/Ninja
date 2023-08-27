@@ -1,0 +1,263 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i {
+    width: 1rem;
+    padding: 8px;
+}
+
+    /* about section *//* about section *//* about section */
+
+
+#about{
+    height: auto;
+    width: 100%;
+}
+#profile{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -60px;
+    position: relative;
+}
+#profile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px grey solid;
+}
+p{
+    font-size: larger;
+}
+mark{
+    background-color: white;
+    color: blue;
+    font-size: larger;
+    
+}
+section{
+    /* height: 100%; */
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section:nth-child(2n+1){
+    background-color: white;
+}
+section:nth-child(2n){
+    background-color: gray;
+} */
+.section-headding{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.section-headding span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+.skill-display{
+    width: 75%;
+    height: 100px;
+    /* border: black solid 2px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    width: 7rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid;
+    
+}
+/* .skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+} */
+.percent-class{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.percent-class{
+    width: 85%;
+    height: inherit;
+    background-color: #2857a4;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    text-align: center;
+    margin-top: -15px;
+}
+.mb75px{
+    color: #2857a4;
+}
+
+/* ======================================================= */
+/* ============timeline======= */
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+
+}
+.timeline-boxs{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+    margin: 5px;
+}
+.timeline-boxs:nth-child(2n+1):after{
+    content: '';
+    border-radius:50% ;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    position: absolute;
+    top: 32%;
+    right: -12%;
+}
+.timeline-boxs:nth-child(2n)::after{
+    content: '';
+    border-radius:50% ;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    position: absolute;
+    top: 32%;
+    left: -10%;
+    z-index: 1;
+}
+.timeline-boxs:nth-child(2n){
+    left: 53%;
+}
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 1px dashed blue;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top:25%;
+    transform: rotate(90deg);
+}
+
+/* <-------------------desktop to mobile---------------> */
+@media screen and (max-width:600px) {
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-boxs{
+        left: 12% !important;
+        width: 80%;
+    }
+
+
+
+
+    
+    .timeline-boxs::after{
+        left: -12% !important;
+    }
+
+
+    /* ===============or==== */
+
+
+    /* .timeline-boxs:nth-child(2n+1):after{
+        left: -12%;
+    }
+    .timeline-boxs:nth-child(2n):after{
+        left: -12%;
+    } */
+}

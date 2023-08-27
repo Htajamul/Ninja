@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+
+            <label for="name">userName</label><br>
+            <input type="text" id="name" required placeholder="name" name="name">
+        </div>
+        <div>
+            <label for="pass">password</label><br>
+            <input type="password" id="pass" required placeholder="password" name="password">
+        </div>
+        <div>
+            <label for="num">number</label><br>
+            <input type="number" id="num" required placeholder="number" name="number">
+        </div>
+        <div>
+            <label for="tim">time</label><br>
+            <input type="time" id="tim" required placeholder="time" name="time">
+        </div>
+        <div>
+            <label for="mail">email</label><br>
+            <input type="email" id="mail" required placeholder="Email@gmail.com" name="Email">
+        </div>
+        <div>
+            <label for="ran">Rangr</label><br>
+            <input type="range" id="ran" required min="10" max="20" step="4" placeholder="range" name="range">
+        </div>
+        <div>
+            <label for="txt">country</label><br>
+            <input type="text" id="txt" required placeholder="text" name="country" value="india" disabled>
+        </div>
+        <div>
+            <p>Gender</p>
+            <input type="radio" name="Gender" value="Male"> Male<br>
+            <input type="radio" name="Gender" value="Male" checked> Male<br>
+            <input type="radio" name="Gender" value="Female">Female<br>
+            <input type="radio" name="Gender" value="other">Other<br>
+        </div>
+        <div>
+            <p>courses have u done</p>
+            <input type="checkbox" name="courses" value="c++">C++<br>
+            <input type="checkbox" name="courses" value="java" checked>java<br>
+            <input type="checkbox" name="courses" value="java script">java Scruipt<br>
+        </div>
+        <div>
+            <p>months</p>
+            <select name="months_selected">
+                <option>jan</option>
+                <option>fab</option>
+                <option>mar</option>
+                <option>april</option>
+            </select><br>
+        </div>
+        <div>
+            <p>
+                share your Experence
+            </p>
+            <textarea name="experience" rows="10" cols="100"></textarea>
+        </div>
+        <div>
+            <input type="button" value="button 1"><br>
+            <button type="button">button 2</button>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    
+</body>
+</html>

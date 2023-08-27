@@ -1,0 +1,28 @@
+#container{
+    height: auto;
+    width: 700px;
+    background-color: cyan;
+    display: flex;
+    flex-wrap: wrap;
+}
+#container div{
+    height:150px ;
+    width: 150px;
+}
+#div1{
+    background-color: rebeccapurple;
+    flex-grow: 1;
+}
+#div2{
+    background-color: brown;
+    flex-grow: 2
+    
+}
+#div3{
+    background-color: red;
+    flex-grow: 3;
+}
+/* #div4{
+    background-color: blanchedalmond;
+    flex-shrink: 5;
+} */

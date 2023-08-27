@@ -1,0 +1,29 @@
+#container{
+    height: 600px;
+    width: 600px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: row;
+    /* align-items:stretch; */
+    
+    
+    
+}
+
+
+#container div{
+    height: auto;
+    width: 150px;
+    /* border-radius: 50%; */
+    /* text-align:center; */
+    
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: blueviolet;
+}
+#div3{
+    background-color: red;
+}

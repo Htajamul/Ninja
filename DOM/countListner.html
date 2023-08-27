@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+           height:100px;
+           width:100px;
+           background-color:red;
+              }
+        body{
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           min-height:100vh;
+           }
+    </style>
+    </head>
+<body>
+     <div>   
+        <div id="div">
+        
+        </div>
+        <p>
+            box clicked 
+           <span id="span">0</span>
+        </p>
+     </div>
+
+
+
+
+    <script>
+        var p = document.getElementById('div');
+        var s= document.getElementById('span');
+        let count = 0;
+        p.addEventListener('click',fun);
+        function fun(){
+            s.innerText=count;
+            count++;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation.css</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        .div1{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .div2{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="div1 animate__animated animate__bounce animate__infinite	infinite">
+            ok
+        </div>
+        <div class="div2 animate__animated animate__rubberBand animate__backInDown">
+            okk2
+        </div>
+    </div>
+</body>
+</html>

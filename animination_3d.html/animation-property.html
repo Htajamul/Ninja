@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            background-color: aqua;
+            border: 2px solid black;
+            /* animation: changeShape 1s ease-in-out 10; */
+            /* animation: changeShape 1s ease-in-out infinite alternate; */
+            animation: changeShape 1s ease-in infinite alternate;
+        }
+        @keyframes changeShape{
+          form{
+            border-radius: 0%;
+          } 
+          to{
+            border-radius: 50%;
+          }      
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

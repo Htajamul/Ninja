@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top:200px;
+            left: 200px;
+            background-color: aqua;
+            /* animation: changeshape 1s ease-in-out 4 alternate; */
+            animation-name: changeShape,rotate,reduceSize;
+            animation-duration: 1s,1s,1s;
+            animation-iteration-count: infinite,infinite,infinite;
+            animation-direction: alternate,alternate,alternate;
+            
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        @keyframes reduceSize{
+            from{
+                height: 200px;
+                width: 200px;
+            }
+            to{
+                height: 100px;
+                width: 100px;
+            }
+        }
+        @keyframes changeShape{
+            0%{
+                border-radius: 0%;
+            }
+            25%{
+                border-radius: 12%;
+            }
+            50%{
+                border-radius: 25%;
+            }
+            100%{
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+</body>
+</html>
